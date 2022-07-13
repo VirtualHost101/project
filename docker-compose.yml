@@ -1,0 +1,14 @@
+version: "3.3"  # optional since v1.27.0
+services:
+  c1:
+    build: .
+    ports:
+      - "8080:8080"
+  c2:
+    image: satyatej/ecomm
+    ports:
+      - "9090:80"
+  c3:
+    image: satyatej/food
+    ports:
+      - "80:80" 
