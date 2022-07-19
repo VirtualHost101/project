@@ -1,3 +1,4 @@
 # export KOPS_STATE_STORE=s3://kuber-10am
+$ ssh-keygen
 # kops create cluster --yes --name=test.k8s.local --state=s3://kuber-10am --zones=ca-central-1d,ca-central-1a --node-count=2 --node-size=t2.medium --master-size=t2.medium 
 # kops delete cluster --name=test.k8s.local --yes
